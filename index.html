@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project and Seminar Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Project & Seminar Help</h1>
+        </div>
+        <div class="menu" id="menu-toggle">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section id="home">
+      <div class="hero">
+        <h2>Professional Project & Seminar Writing Services</h2>
+        <p>
+          Contact me for project and seminar help for all Nigerian universities.
+        </p>
+        <button><a href="#contact">Get in Touch</a></button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>Project Writing</h3>
+          <p>
+            We provide expert project writing services tailored to your academic
+            needs.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Seminar Writing</h3>
+          <p>Need a high-quality seminar paper? We've got you covered.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        If you're interested in my services, please fill out the form below, or
+        reach me through social media.
+      </p>
+
+      <form id="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          placeholder="Enter your project topic and duration"
+        ></textarea>
+
+        <button type="submit" onclick="whasapp()">Send Message</button>
+      </form>
+
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/profie.php?id=100088983773026&mibextid=ZbWKwL"
+          target="_blank"
+          >Facebook</a
+        >
+        <a
+          href="https://x.com/OlawaleIshola19?t=zM61_UXfS-CuowYMR-q9jQ&s=09"
+          target="_blank"
+          >Twitter</a
+        >
+        <a href="https://wa.me/2348155113559" target="_blank">WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Project & Seminar Help. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>

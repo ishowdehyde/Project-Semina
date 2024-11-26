@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .logo h1 {
+  font-size: 1.5em;
+}
+
+nav .menu ul {
+  list-style: none;
+  display: flex;
+}
+
+nav .menu ul li {
+  margin: 0 15px;
+}
+
+nav .menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav .hamburger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+#services {
+  background-color: #f4f4f4;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  width: 45%;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  nav .menu {
+    display: none;
+  }
+
+  nav .hamburger {
+    display: block;
+  }
+
+  nav .menu.active {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .menu ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
